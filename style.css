@@ -123,19 +123,21 @@ body {
     font-size: 30px;
 }
 
-.bi-upload {
-    cursor: pointer;
-}
-
-.bi-bell-fill {
-    cursor: pointer;
-}
-
-.bi-person-circle {
-    cursor: pointer;
-}
-
 .content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.display-left {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+    gap: 40px;
+    font-size: 20px;
+    width: 10%;
+    position: relative;
     display: flex;
     width: 100%;
     height: 100vh;
@@ -196,4 +198,25 @@ body {
 .images img {
     width: 22%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .content-wrapper {
+        width: 80%;
+    }
+
+    body {
+        background-color: #0f0f0f;
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .ham-logo {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
 }
